@@ -1,0 +1,389 @@
+/* Common Style */
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* Begin: Header Style */
+
+body {
+	padding: 20px;
+	background-image: url("../assets/background.png");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	z-index: -2;
+  padding: 0;
+  height:	100%;
+}
+
+
+.main{
+  display:	flex;
+  flex-direction:	column;
+  height:	100%;
+  color: #ffffff33;
+
+}
+
+.header{
+  display: flex;
+  background-color: #080808;
+}
+
+.header, .footer{
+  flex: 0 0 150px;
+
+}
+
+.header img{
+  margin-left: 100px;
+  align-self: center; 
+  width: 100px;
+  height: 25px;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 0;
+}
+
+
+.left, .right{
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+}
+
+.left{
+  color: white;
+  font-size: 20px;
+  padding: 30px;
+  flex: 0 0 170px;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  flex: 0 0 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.dealer_img, .leave_button{
+  
+  background-repeat: no-repeat;
+  flex: 1 1 0;
+  display: flex;  
+}
+
+.leave_button{
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-self:	flex-end;
+  width: 100%;
+} 
+
+.middle{
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  height:100%;
+}
+
+.show_card{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+}
+
+.show_card img{
+  padding: 0 10px 0 10px!important;
+}
+
+.player1_card, .player2_card{
+  padding: 0px;
+  margin: 0px;
+  flex: 0 0 150px
+}
+
+.role_dicision{
+  flex: 1 1 0;
+}
+
+.player2_card{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.player2_card > *{
+  padding: 10px;
+}
+
+.show_condition{
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+}
+
+.state_stone, .prepare_stone, .label{
+  display: flex;
+  flex: 1 1 0;
+}
+
+.label {
+  display: flex;
+  flex-direction: row;
+}
+
+.label div{
+  margin: 10px;
+  display: flex;
+  background-color: #ffffff33;
+  flex: 1 1 0;
+}
+
+.label button{
+  border-radius: 100px;
+  margin: 30px 65px 30px 65px;
+  width: 100%;
+}
+
+.state_stone{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.bet_data, .stone_data, .deal{
+  flex: 1 1 0;
+  padding: 10px;
+  margin: 10px;
+}
+
+.bet_data{
+  display: flex;
+  flex-direction: row;
+  color: #9e9e9e;
+  font-size: 30px;
+  align-items: center;
+}
+
+.stone_data{
+  display: flex;
+  flex-direction: column;
+}
+
+.stone_data > p:nth-child(1){
+  flex: 0 0 35px;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  font-size: 30px;
+  color: white;  
+}
+
+.stone_data > p:nth-child(2){
+  flex:1 1 0;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+}
+
+.stone_data > p:nth-child(2) img{
+  outline: none;
+  border: none;
+}
+
+.role_dicision{
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  display: flex;
+}
+
+
+.Dcision_stand, .Dcision_hit, .Dcision_double {
+  outline: none;
+  border: none;
+  background: linear-gradient(to right,#e64242, #ffffff, #e64242);
+  color: red;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px;
+  width: 80px;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.Dcision_stand:hover, .Dcision_hit:hover, .Dcision_double:hover{
+  background: linear-gradient(to right, #ffffff, #e64242,  #ffffff);
+}
+
+.Dcision_stand:active, .Dcision_hit:active, .Dcision_double:active{
+  border: 1px solid white;
+}
+
+.bet_data > *{
+  text-align: center;
+  align-items: center;
+  flex: 1 1 0;
+}
+
+.bet_stone{
+  margin: 0 200px 0 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex: 1 1 0;
+  margin: 10px;
+  justify-content: space-around;
+}
+
+.bet_stone button{
+  margin: 0 7px 0 7px;
+  height: 60px;
+  text-align: center;
+  color: black; 
+  justify-content: space-around;
+  outline: none;
+  border: none;
+  flex: 0 0 60px;
+  background-size: 100% 100%; 
+  border-radius:100px;
+}
+
+.bet_stone button:hover{
+  background-blend-mode: hard-light;
+}
+
+.bet_stone button:active{
+  background-blend-mode: luminosity;
+}
+
+.clean, .max{
+  background: none;
+  display: flex;
+  flex: 1 1 0;
+  margin: 10px; 
+  border-radius: 100px;
+  border: 2px solid white !important;
+  justify-content: space-around;
+
+}
+
+.clean > span, .max > span{
+  margin: 0 15px 0 15px;
+  padding: 5px 10px 5px 10px;
+  font-size: 25px;
+  color: white;
+  display: flex;
+}
+
+.max > img{
+  color: white; 
+  padding: 10px;
+}
+
+.dealer_img{
+  letter-spacing: 10px;
+  display: flex;
+  align-items: flex-end;
+  color: white;  
+  font-size: 100px;
+  background-size: 100% 60%;
+  background-image: url("../assets/card_puple.png");
+  margin: 0;
+  padding: 0;
+}
+
+.prepare_stone{
+  display: flex;
+  flex-direction: column; 
+  
+}
+
+.stone_top{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex:1 1 0;
+}
+
+.stone_down{
+  flex-direction: row;
+  display: flex;
+  margin: 0 10px 0 10px;
+  flex: 1 1 0;
+  padding: 10px;
+  margin: 10px;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+}
+
+.space{
+  background-color: white;
+  flex: 1 1 0;
+}
+
+.beal_button{
+  flex: 1 1 0;
+}
+
+.stone_down .deal{
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 24px;
+  background: linear-gradient(to right, #83a102, #83a10266, #83a102);
+  color: black;
+  font-weight: bold;
+  text-align:center;
+  border-radius: 100px;
+}
+
+.stone_down .deal:hover{
+  background-color: white
+}
+
+._leave{
+  height: 60px;
+  border: 1px solid red;
+  border-right-color: #080808;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  color: white;
+  background-color: #080808;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+._leave:hover{
+  background: space;
+}
+
+.text_lavel{
+  margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .header{
+    width: 1200px;
+  }
+}
+

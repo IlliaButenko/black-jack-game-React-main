@@ -1,0 +1,21 @@
+/* body {
+	padding: 20px;
+	background-image: url("../assets/background.png");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	z-index: -2;
+	padding: 0;
+	height:	100%;
+}
+
+header, footer{
+	flex: 0 0 130px;
+}
+
+header{
+	background-color: #080808;
+}
+
+.content{
+	flex: 1 1 0;
+} */
